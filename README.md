@@ -1,8 +1,13 @@
 # make-observer-command
 Make observer command for laravel 
 ## Installation
-First as far as this functionality is in dev mode you need to add this to your **composer.json** file
+First as far as this functionality is in dev mode you need to add this to your **composer.json** file under the config
 ```json
+"config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
 "minimum-stability": "dev",
 "prefer-stable": true
 ```
