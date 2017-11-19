@@ -157,8 +157,6 @@ class MakeObserver extends Command
 
         $observerText = str_replace($dummyStrings, $observerInputs, $observerStub);
 
-//        dd(app_path('Observers' . '/' . $observerDirectory  . '.php'));
-
         if (File::put(app_path('Observers' . '/' . $observerDirectory  . '.php'), $observerText)) {
 
             $this->info('Observer was successfully created');
