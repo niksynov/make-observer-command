@@ -8,5 +8,6 @@
             "email": "niksynev@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
