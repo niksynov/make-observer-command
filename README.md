@@ -15,7 +15,7 @@ Then add service provider into your **app.php** file in **config** folder
 ```php
 JeroenG\Packager\PackagerServiceProvider::class,
 ```
-To add Observer class you need to enter Observer name and relative model which need to be observed
+To add Observer class you need to enter Observer name and relative model which need to be observed. It will create Observers folder (if you dont have one) in your app directory and put class there.
 ```bash
 $ php artisan make:observer UserObserver 'App\Models\User' --methods=created,updated
 ```
