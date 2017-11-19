@@ -14,7 +14,7 @@ First as far as this functionality is in dev mode you need to add this to your *
 Next install package Via Composer
 
 ```bash
-$ composer require composer require nicksynev/make-observer-command
+$ composer require nicksynev/make-observer-command
 ```
 Then add service provider into your **app.php** file in **config** folder
 ```php
