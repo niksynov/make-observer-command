@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Observers\DummyNamespace;
+
+use DummyModel;
+
+class DummyClass
+{
+DummyContent
+}

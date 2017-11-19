@@ -1,0 +1,13 @@
+{
+    "name": "nicksynev/make-observer-command",
+    "description": "Command for creating Observer classes in Laravel",
+    "type": "laravel-artisan-command",
+    "authors": [
+        {
+            "name": "Nick Synov",
+            "email": "niksynev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
