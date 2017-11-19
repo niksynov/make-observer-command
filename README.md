@@ -28,4 +28,4 @@ There are 6 methods in command
 
 ```creating, created, updating, updated, deleting, deleted```
 
-If no method chosen randomly puts all of them to class
+If no method chosen puts all of them to class
