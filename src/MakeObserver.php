@@ -136,7 +136,7 @@ class MakeObserver extends Command
         $observerStub = file_get_contents(__DIR__. '/Stubs/Observer/' . 'observer.stub', true);
 
         $observerContent = '';
-g
+
         $methods = $methods ?: self::CONST_VALID_METHODS;
 
         foreach ($methods as $method) {
