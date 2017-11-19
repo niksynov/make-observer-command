@@ -34,8 +34,8 @@ Do not forget to add your Observer class to init your observer for example in **
 
 ```php
 public function boot()
-    {
-        User::observe(UserObserver::class);
-        //
-    }
+{
+    User::observe(UserObserver::class);
+    // Your code
+}
 ```
