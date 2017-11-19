@@ -30,7 +30,7 @@ There are 6 methods in command
 
 If no method chosen puts all of them to class
 
-Do not forget to add your Observer class to init your observer for example in **AppServiceProvider** boot method
+Do not forget to init your observer for example in **AppServiceProvider** boot method
 
 ```php
 public function boot()
