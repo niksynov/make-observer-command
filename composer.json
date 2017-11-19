@@ -10,5 +10,11 @@
     ],
     "minimum-stability": "dev",
     "prefer-stable" : true,
-    "require": {}
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "NickSynev\\MakeObserverCommand\\": "src"
+        }
+    }
 }
