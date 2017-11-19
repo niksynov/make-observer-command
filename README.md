@@ -1,5 +1,5 @@
 # make-observer-command
-Make observer command for laravel 
+Make observer command for Laravel's artisan
 ## Installation
 First as far as this functionality is in dev mode you need to add this to your **composer.json** file under the config
 ```json
