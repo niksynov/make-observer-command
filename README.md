@@ -2,7 +2,7 @@
 Make observer command for laravel 
 ## Installation
 First as far as this functionality is in dev mode you need to add this to your **composer.json** file
-```
+```json
 "minimum-stability": "dev",
 "prefer-stable": true
 ```
