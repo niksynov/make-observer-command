@@ -78,7 +78,7 @@ class MakeObserver extends Command
 
             if ($i != count($observerName) - 1) {
 
-                if(!file_exists($observersDir . '/' . $observerName[$i])){
+                if (!file_exists($observersDir . '/' . $observerName[$i])) {
 
                     File::makeDirectory($observersDir . '/' . $observerName[$i]);
 
@@ -133,7 +133,7 @@ class MakeObserver extends Command
 
         $observerModelInjection = end($observerModelInjection) . " $" . camel_case(end($observerModelInjection));
 
-        $observerStub = file_get_contents(__DIR__. '/Stubs/Observer/' . 'observer.stub', true);
+        $observerStub = file_get_contents(__DIR__ . '/Stubs/Observer/' . 'observer.stub', true);
 
         $observerContent = '';
 
@@ -143,12 +143,12 @@ class MakeObserver extends Command
 
             if ($method === end($methods)) {
 
-                $observerContent .= file_get_contents(__DIR__. '/Stubs/Observer/Methods/' . $method . '.stub', true) . "\n";
+                $observerContent .= file_get_contents(__DIR__ . '/Stubs/Observer/Methods/' . $method . '.stub', true) . "\n";
 
                 break;
             }
 
-            $observerContent .= file_get_contents(__DIR__. '/Stubs/Observer/Methods/' . $method . '.stub', true) . "\n\n";
+            $observerContent .= file_get_contents(__DIR__ . '/Stubs/Observer/Methods/' . $method . '.stub', true) . "\n\n";
         }
 
         $dummyStrings = ['DummyNamespace', 'DummyClass', 'DummyContent', 'DummyModel', 'Injection'];
@@ -157,7 +157,9 @@ class MakeObserver extends Command
 
         $observerText = str_replace($dummyStrings, $observerInputs, $observerStub);
 
-        if (Storage::disk('observers')->put($observerDirectory . '.php', $observerText)) {
+//        dd(app_path('Observers' . '/' . $observerDirectory  . '.php'));
+
+        if (File::put(app_path('Observers' . '/' . $observerDirectory  . '.php'), $observerText)) {
 
             $this->info('Observer was successfully created');
 

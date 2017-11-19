@@ -18,7 +18,7 @@ class MakeObserverCommandServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        
+
     }
 
     /**
