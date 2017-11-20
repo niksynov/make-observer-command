@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Observers\DummyNamespace;
+namespace DummyNamespace;
 
 use DummyModel;
 

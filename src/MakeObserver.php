@@ -119,13 +119,21 @@ class MakeObserver extends Command
 
         $observerName = explode("/", $this->argument('name'));
 
-        $observerNameForNamespace = end($observerName);
+        if (count($observerName) > 1) {
 
-        $observerName = studly_case($observerNameForNamespace);
+            $observerNameForNamespace = end($observerName);
 
-        $observerNamespace = str_replace("/", '\\', $observerDirectory);
+            $observerName = studly_case($observerNameForNamespace);
 
-        $observerNamespace = str_replace('\\' . $observerNameForNamespace, '', $observerNamespace);
+            $observerNamespace = str_replace("/", '\\', $observerDirectory);
+
+            $observerNamespace = 'App\\Observers\\' . str_replace('\\' . $observerNameForNamespace, '', $observerNamespace);
+
+        } else {
+            $observerNamespace = 'App\\Observers';
+
+            $observerName = implode("/", $observerName);
+        }
 
         $observerModel = $this->argument('model');
 
@@ -157,7 +165,7 @@ class MakeObserver extends Command
 
         $observerText = str_replace($dummyStrings, $observerInputs, $observerStub);
 
-        if (File::put(app_path('Observers' . '/' . $observerDirectory  . '.php'), $observerText)) {
+        if (File::put(app_path('Observers' . '/' . $observerDirectory . '.php'), $observerText)) {
 
             $this->info('Observer was successfully created');
 
