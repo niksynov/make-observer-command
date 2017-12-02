@@ -3,7 +3,7 @@
     "description": "Command for creating Observer classes in Laravel",
     "keywords": [
         "Laravel make observer command",
-        "Laravel"
+        "Laravel",
         "artisan",
         "command",
         "package",
