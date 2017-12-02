@@ -26,7 +26,7 @@ $ php artisan make:observer UserObserver 'App\Models\User' --methods=created,upd
 ```
 There are 6 methods in command: **creating, created, updating, updated, deleting, deleted**.
 
-If no method chosen puts all of them to class.
+If no method chosen puts all of them to a class.
 
 Do not forget to init your observer for example in **AppServiceProvider** boot method.
 
