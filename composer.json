@@ -2,6 +2,7 @@
     "name": "nicksynev/make-observer-command",
     "description": "Command for creating Observer classes in Laravel",
     "type": "laravel-artisan-command",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nick Synov",
