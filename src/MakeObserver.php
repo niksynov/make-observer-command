@@ -4,7 +4,6 @@ namespace NickSynev\MakeObserverCommand;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
 
 class MakeObserver extends Command
 {

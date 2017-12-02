@@ -1,6 +1,15 @@
 {
     "name": "nicksynev/make-observer-command",
     "description": "Command for creating Observer classes in Laravel",
+    "keywords": [
+        "Laravel make observer command",
+        "Laravel"
+        "artisan",
+        "command",
+        "package",
+        "GitHub"
+    ],
+    "homepage": "https://github.com/NickSynev/make-observer-command",
     "type": "laravel-artisan-command",
     "license": "MIT",
     "authors": [
@@ -11,8 +20,10 @@
     ],
     "minimum-stability": "dev",
     "prefer-stable" : true,
-    "require": {},
-
+    "require": {
+        "illuminate/support": "~5",
+        "illuminate/console": "~5",
+    },
     "autoload": {
         "psr-4": {
             "NickSynev\\MakeObserverCommand\\": "src"
