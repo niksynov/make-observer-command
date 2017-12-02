@@ -2,12 +2,11 @@
     "name": "nicksynev/make-observer-command",
     "description": "Command for creating Observer classes in Laravel",
     "keywords": [
-        "Laravel make observer command",
-        "Laravel",
+        "laravel",
+        "observer",
         "artisan",
         "command",
-        "package",
-        "GitHub"
+        "package"
     ],
     "homepage": "https://github.com/NickSynev/make-observer-command",
     "type": "laravel-artisan-command",
