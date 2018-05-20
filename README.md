@@ -24,7 +24,7 @@ To add observer class you need to enter name, relative model's namespace and met
 ```bash
 $ php artisan make:observer UserObserver 'App\Models\User' --methods=created,updated
 ```
-There are 6 methods in command: **creating, created, updating, updated, deleting, deleted**.
+There are 6 methods: **creating, created, updating, updated, deleting, deleted**.
 
 If no method chosen puts all of them to a class.
 
