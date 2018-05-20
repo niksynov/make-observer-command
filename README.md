@@ -37,6 +37,7 @@ public function boot()
     // Your code
 }
 ```
+## Removal
 For removing package first remove service provider from **app.php**, then simply remove by composer: 
 ```bash
 $ composer remove nicksynev/make-observer-command
