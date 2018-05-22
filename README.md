@@ -1,8 +1,8 @@
 # make-observer-command
 
 [![Total Downloads](https://poser.pugx.org/nicksynev/make-observer-command/downloads.png)](https://packagist.org/packages/nicksynev/make-observer-command)
-[![License](https://poser.pugx.org/nicksynev/make-observer-command/license.svg)](https://packagist.org/packages/nicksynev/make-observer-command)
 [![Latest Unstable Version](https://poser.pugx.org/nicksynev/make-observer-command/v/unstable.svg)](https://packagist.org/packages/nicksynev/make-observer-command)
+[![License](https://poser.pugx.org/nicksynev/make-observer-command/license.svg)](https://packagist.org/packages/nicksynev/make-observer-command)
 
 Command for creating Observer classes in Laravel
 ## Installation
