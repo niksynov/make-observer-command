@@ -1,9 +1,8 @@
-# make-observer-command
-
 [![Total Downloads](https://poser.pugx.org/nicksynev/make-observer-command/downloads.png)](https://packagist.org/packages/nicksynev/make-observer-command)
 [![Latest Unstable Version](https://poser.pugx.org/nicksynev/make-observer-command/v/unstable.svg)](https://packagist.org/packages/nicksynev/make-observer-command)
 [![License](https://poser.pugx.org/nicksynev/make-observer-command/license.svg)](https://packagist.org/packages/nicksynev/make-observer-command)
 
+# make-observer-command
 Command for creating Observer classes in Laravel
 ## Installation
 First as far as this functionality is in dev mode you need to add **minimum-stablity** and **prefer-stable** to your **composer.json** file under the config.
