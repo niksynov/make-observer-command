@@ -3,7 +3,7 @@
 [![License](https://poser.pugx.org/nicksynev/make-observer-command/license.svg)](https://packagist.org/packages/nicksynev/make-observer-command)
 
 # make-observer-command
-Command for creating Observer classes in Laravel
+Artisan command for creating observer classes in Laravel.
 ## Installation
 Install package via **composer**.
 
