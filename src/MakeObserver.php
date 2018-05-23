@@ -20,7 +20,7 @@ class MakeObserver extends Command
      *
      * @var string
      */
-    protected $description = 'Create observer';
+    protected $description = 'Create a new observer class';
 
     protected $methods = [];
 
