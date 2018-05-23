@@ -5,17 +5,7 @@
 # make-observer-command
 Command for creating Observer classes in Laravel
 ## Installation
-First as far as this functionality is in dev mode you need to add **minimum-stablity** and **prefer-stable** to your **composer.json** file under the config.
-```json
-"config": {
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-  },
-"minimum-stability": "dev",
-"prefer-stable": true
-```
-Next install package via **composer**.
+Install package via **composer**.
 
 ```bash
 $ composer require nicksynev/make-observer-command
