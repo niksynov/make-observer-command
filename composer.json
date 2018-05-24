@@ -1,6 +1,6 @@
 {
     "name": "nicksynev/make-observer-command",
-    "description": "Command for creating Observer classes in Laravel",
+    "description": "Artisan command for creating Observer classes in Laravel",
     "keywords": [
         "laravel",
         "observer",
