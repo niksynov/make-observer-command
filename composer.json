@@ -25,5 +25,12 @@
         "psr-4": {
             "NickSynev\\MakeObserverCommand\\": "src"
         }
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "NickSynev\MakeObserverCommand\MakeObserverCommandServiceProvider"
+        ]
     }
+},
 }
