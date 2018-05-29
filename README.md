@@ -33,7 +33,9 @@ public function boot()
 }
 ```
 ## Removal
-First remove service provider from **app.php**, then simply type by composer: 
+**(Only for Laravel 5.4 and below)** Remove service provider from **app.php**. 
+
+Remove by **composer**.
 ```bash
 $ composer remove nicksynev/make-observer-command
 ```
