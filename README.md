@@ -10,7 +10,7 @@ Install package via **composer**.
 ```bash
 $ composer require nicksynev/make-observer-command
 ```
-Then add service provider into your **app.php** file in **config** folder.
+**(Only for Laravel 5.4 and below)** Add service provider into your **app.php** file in **config** folder.
 ```php
 NickSynev\MakeObserverCommand\MakeObserverCommandServiceProvider::class,
 ```
