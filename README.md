@@ -4,6 +4,8 @@
 
 # make-observer-command
 Artisan command for creating observer classes in Laravel.
+
+Tested on Laravel versions: **5.3, 5.4, 5.5, 5.6**.
 ## Installation
 Install package via **composer**.
 
