@@ -13,7 +13,7 @@ class MakeObserver extends Command
      *
      * @var string
      */
-    protected $signature = 'make:observer {name} {model} {--methods=}';
+    protected $signature = 'make:observer {name} {model?} {--methods=}';
 
     /**
      * The console command description.
@@ -133,8 +133,31 @@ class MakeObserver extends Command
 
             $observerName = implode("/", $observerName);
         }
-
-        $observerModel = $this->argument('model');
+        
+        $baseModelName = str_replace('Observer','', $this->argument('name'));
+        
+        $autoModel = "\App\\$baseModelName";
+        
+        $autoModel2 = "\App\\Models\\$baseModelName";
+        
+        if (class_exists($autoModel)) {
+            
+            $selectedModel = $autoModel;
+            
+        } elseif (class_exists($autoModel2)) {
+            
+            $selectedModel = $autoModel2;
+            
+        } elseif ($this->argument('model')) {
+            
+            $selectedModel = $this->argument('model');
+            
+        } else {
+            
+            $this->error('Could not guess model class, please inform as second parameter (use quotes).');
+            
+        }
+        $observerModel = $selectedModel;
 
         $observerModelInjection = explode("\\", $observerModel);
 
