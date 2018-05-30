@@ -7,7 +7,18 @@ use Illuminate\Support\Facades\File;
 
 class MakeObserver extends Command
 {
-    const CONST_VALID_METHODS = ['creating', 'created', 'updating', 'updated', 'deleting', 'deleted'];
+    const CONST_VALID_METHODS = [
+        'creating',
+        'created',
+        'updating',
+        'updated',
+        'saving',
+        'saved',
+        'deleting',
+        'deleted',
+        'restoring',
+        'restored',
+    ];
     /**
      * The name and signature of the console command.
      *
@@ -140,7 +151,7 @@ class MakeObserver extends Command
 
         $observerModelInjection = end($observerModelInjection) . " $" . camel_case(end($observerModelInjection));
 
-        $observerStub = file_get_contents(__DIR__ . '/Stubs/Observer/' . 'observer.stub', true);
+        $observerStub = file_get_contents(__DIR__ . '/Stubs/observer.stub', true);
 
         $observerContent = '';
 
@@ -148,14 +159,18 @@ class MakeObserver extends Command
 
         foreach ($methods as $method) {
 
+            $methodStub = file_get_contents(__DIR__ . '/Stubs/method.stub', true);
+
+            $changedMethodStub = str_replace('DummyMethodName', $method, $methodStub);
+
             if ($method === end($methods)) {
 
-                $observerContent .= file_get_contents(__DIR__ . '/Stubs/Observer/Methods/' . $method . '.stub', true) . "\n";
+                $observerContent .= $changedMethodStub . "\n";
 
                 break;
             }
 
-            $observerContent .= file_get_contents(__DIR__ . '/Stubs/Observer/Methods/' . $method . '.stub', true) . "\n\n";
+            $observerContent .= $changedMethodStub . "\n\n";
         }
 
         $dummyStrings = ['DummyNamespace', 'DummyClass', 'DummyContent', 'DummyModel', 'Injection'];
