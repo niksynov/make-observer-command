@@ -25,7 +25,7 @@ Additionally you can specify related model's namespace and methods.
 ```bash
 $ php artisan make:observer UserObserver --model='App\Models\User' --methods=created,updated
 ```
-There are 6 methods: **creating, created, updating, updated, deleting, deleted**.
+There are 10 methods: **creating, created, updating, updated, saving, saved, deleting, deleted, restoring, restored**.
 
 If no method chosen puts all of them to a class.
 
