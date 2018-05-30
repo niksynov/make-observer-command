@@ -134,7 +134,7 @@ class MakeObserver extends Command
             $observerName = implode("/", $observerName);
         }
 
-        $observerModel = $this->option('model');
+        $observerModel = $this->option('model') ?: "App\\" . explode('Observer', $observerName)[0];
 
         $observerModelInjection = explode("\\", $observerModel);
 
