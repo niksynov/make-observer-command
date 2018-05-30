@@ -17,7 +17,7 @@ $ composer require nicksynev/make-observer-command
 NickSynev\MakeObserverCommand\MakeObserverCommandServiceProvider::class,
 ```
 ## Usage
-To add observer class you need to enter class name. Additionally you could specify related model's namespace and methods. It will create Observers folder (if you dont have one) in your app directory and put class there. Also supports **subfolder structure** (for example User/UserObserver).
+To add observer class you need to enter class name. Additionally you can specify related model's namespace and methods. It will create Observers folder (if you dont have one) in your app directory and put class there. Also supports **subfolder structure** (for example User/UserObserver).
 ```bash
 $ php artisan make:observer UserObserver --model='App\Models\User' --methods=created,updated
 ```
