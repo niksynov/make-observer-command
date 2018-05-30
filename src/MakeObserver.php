@@ -13,7 +13,7 @@ class MakeObserver extends Command
      *
      * @var string
      */
-    protected $signature = 'make:observer {name} {model} {--methods=}';
+    protected $signature = 'make:observer {name} {--model=} {--methods=}';
 
     /**
      * The console command description.
@@ -92,7 +92,7 @@ class MakeObserver extends Command
 
     private function makeMethods()
     {
-        $methods = $this->options()['methods'] != null ? explode(',', $this->options()['methods']) : null;
+        $methods = $this->option('methods') != null ? explode(',', $this->option('methods') : null;
 
         if ($methods) {
 
@@ -134,7 +134,7 @@ class MakeObserver extends Command
             $observerName = implode("/", $observerName);
         }
 
-        $observerModel = $this->argument('model');
+        $observerModel = $this->option('model');
 
         $observerModelInjection = explode("\\", $observerModel);
 
