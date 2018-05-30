@@ -165,7 +165,7 @@ class MakeObserver extends Command
 
             if ($method === end($methods)) {
 
-                $observerContent .= $changedMethodStub . "\n";
+                $observerContent .= $changedMethodStub;
 
                 break;
             }
