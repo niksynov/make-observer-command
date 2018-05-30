@@ -92,7 +92,7 @@ class MakeObserver extends Command
 
     private function makeMethods()
     {
-        $methods = $this->option('methods') != null ? explode(',', $this->option('methods') : null;
+        $methods = $this->option('methods') != null ? explode(',', $this->option('methods')) : null;
 
         if ($methods) {
 
